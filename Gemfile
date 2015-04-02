@@ -1,14 +1,8 @@
-source "https://rubygems.org" 
+source 'https://rubygems.org'
 
-#require 'json'
-#require 'open-uri'
-#versions = JSON.parse(open('https://pages.github.com/versions.json').read)
-
-#gem 'github-pages', versions['github-pages']
-
-gem "jekyll" 
-gem "jekyll-sitemap" 
-gem "sass" 
-gem "bourbon" 
-gem "neat" 
-#gem 'octopress', '~> 3.0.0.rc.12' 
+gem 'jekyll'
+gem 'jekyll-minibundle'
+gem 'coderay'
+gem 'rake'
+gem 'thor'
+gem 'activesupport'

@@ -1,55 +1,81 @@
-# Build settings
-markdown: redcarpet
-highlighter: pygments
-gems:
-  - jemoji
-  
-# Site settings
-title: "Mediator"
-description: > # this means to ignore newlines until "email:"
-   A Jekyll theme - Medium inspired
+title:            Site Title
+description:      Describe your website here.
+logo:             site-logo.png
+disqus_shortname: 
+search:           true
+#Change url to your domain. Leave localhost server or blank when working locally.
+url:              http://localhost:4000
+#cdn:			  http://cdn.localhost:4000
 
-email: a-mail@mail.mail
-#blog logo
-logo: "/assets/images/df_logo.jpg"
-# blog cover
-cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
+# Owner/author information
+owner:
+  name:				Your Name
+  avatar:			bio-photo.jpg
+  email:			you@email.com
+  signoff_text:		Till next time
+  signoff_link:		/about
+  signature_image:	signature.png
+  # Social networking links used in footer. Update and remove as you like.
+  # To register at HMFAYSAL SOCIAL, visit http://social.hmfaysal.tk
+  twitter:        hmfaysal
+  facebook:       
+  github:         
+  stackexchange:  
+  linkedin:       
+  instagram:      
+  flickr:         
+  tumblr:         
+  hmfaysalsocial: hmfaysal
+  # For Google Authorship https://plus.google.com/authorship
+  google_plus:    
 
-name: 'Dirk Fabisch'
-author: 'Dirk Fabisch'
-author_image: "/assets/images/author.jpg"
+# Analytics and webmaster tools stuff goes here
+google_analytics:   
+google_verify:      
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:         
 
-paginate:	5
+# Links to include in top navigation
+# For external links add external: true
+links:
+  - title: T-Details
+    url: /technical-details
+  - title: Tags
+    url: /tags
+  - title: Categories
+    url: /categories
+  - title: Blog
+    url: /
+    external: false
+  - title: About
+    url: /about
 
-url: "http://myblog.***.***" # the base hostname & protocol for your site
-baseurl: ""
 
-# social icons and sharing options
-social:
-  - icon:	twitter
-    url:	https://twitter.com/dirkfabisch
-    desc: Follow me on twitter
-    share_url: http://twitter.com/share
-    share_title: ?text=
-    share_link: "&amp;url="
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    America/New_York
+future:      true
+pygments:    false
+highlight_js:	true
+markdown:    kramdown
+paginate:    4
+paginate_path: "page:num"
 
-#  - icon:	facebook
-#    url:	https://facebook.com/???
-#    desc: Connect with me facebook
-#    share_url: https://www.facebook.com/sharer.php
-#    share_title: ?t=
-#    share_link: "&amp;u="
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title
 
-  - icon:	github
-    url:	https://github.com/dirkfabisch
-    desc:	Fork me on github
-    share_url:
-    share_title:
-    share_link:
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
 
-#  - icon:	google-plus
-#    url:	https://google.com/???
-#    desc:	Add me on google+
-#    share_url:
-#    share_title:
-#    share_link:
+  coderay:
+    coderay_line_numbers: 
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+include: [".htaccess"]
+exclude: [".gitignore", "build.bat", "build-deploy.bat", "build-init.bat", "desktop.ini", "post.thor",  "lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
